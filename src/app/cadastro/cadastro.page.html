@@ -1,0 +1,102 @@
+<ion-content>
+  <div class="cadastro">
+    <form (ngSubmit)="register()" class="form-cadastro">
+
+      <h1>Cadastro</h1>
+
+      <div class="div-inputs">
+        <ion-item>
+          <ion-input placeholder="Nome" type="text" [(ngModel)]="nome" name="nome"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-select class="always-flip" toggleIcon="caret-down-sharp" placeholder="Gênero" [(ngModel)]="genero"
+            name="genero">
+            <ion-select-option value="masculino">Masculino</ion-select-option>
+            <ion-select-option value="feminino">Feminino</ion-select-option>
+            <ion-select-option value="outros">Outros</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="date" [(ngModel)]="dataNascimento"></ion-input>
+        </ion-item>
+
+        <!-- Aqui você deve adicionar todos os UF do Brasil -->
+        <ion-item>
+          <ion-select class="always-flip" toggleIcon="caret-down-sharp" placeholder="UF" [(ngModel)]="uf" name="uf">
+            <ion-select-option value="AC">AC</ion-select-option>
+            <ion-select-option value="AL">AL</ion-select-option>
+            <ion-select-option value="AP">AP</ion-select-option>
+            <ion-select-option value="AM">AM</ion-select-option>
+            <ion-select-option value="BA">BA</ion-select-option>
+            <ion-select-option value="CE">CE</ion-select-option>
+            <ion-select-option value="DF">DF</ion-select-option>
+            <ion-select-option value="ES">ES</ion-select-option>
+            <ion-select-option value="GO">GO</ion-select-option>
+            <ion-select-option value="MA">MA</ion-select-option>
+            <ion-select-option value="MT">MT</ion-select-option>
+            <ion-select-option value="MS">MS</ion-select-option>
+            <ion-select-option value="MG">MG</ion-select-option>
+            <ion-select-option value="PA">PA</ion-select-option>
+            <ion-select-option value="PB">PB</ion-select-option>
+            <ion-select-option value="PR">PR</ion-select-option>
+            <ion-select-option value="PE">PE</ion-select-option>
+            <ion-select-option value="PI">PI</ion-select-option>
+            <ion-select-option value="RJ">RJ</ion-select-option>
+            <ion-select-option value="RN">RN</ion-select-option>
+            <ion-select-option value="RS">RS</ion-select-option>
+            <ion-select-option value="RO">RO</ion-select-option>
+            <ion-select-option value="RR">RR</ion-select-option>
+            <ion-select-option value="SC">SC</ion-select-option>
+            <ion-select-option value="SP">SP</ion-select-option>
+            <ion-select-option value="SE">SE</ion-select-option>
+            <ion-select-option value="TO">TO</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+
+        <ion-item>
+          <ion-input placeholder="CEP" type="text" [(ngModel)]="cep" name="cep"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Cidade" type="text" [(ngModel)]="cidade" name="cidade"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Bairro" type="text" [(ngModel)]="bairro" name="bairro"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Rua" type="text" [(ngModel)]="rua" name="rua"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Complemento" type="text" [(ngModel)]="complemento" name="complemento"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Email" type="text" [(ngModel)]="email" name="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="password" placeholder="Senha" [(ngModel)]="senha" name="senha">
+            <ion-input-password-toggle color="medium" slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="password" placeholder="Confirme a Senha" [(ngModel)]="confirmarSenha" name="confirmarSenha">
+            <ion-input-password-toggle color="medium" slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+      </div>
+
+      <ion-button type="submit">Cadastrar</ion-button>
+    </form>
+
+
+
+  </div>
+</ion-content>

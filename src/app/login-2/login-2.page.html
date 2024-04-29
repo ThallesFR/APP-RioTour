@@ -1,0 +1,38 @@
+<ion-content>
+  <div class="login-2">
+
+    <div class="logo">
+      <h1 class="logo-text">Rio</h1>
+      <h1 class="logo-text">Tour</h1>
+    </div>
+
+
+    <form (ngSubmit)="login()" class="form-login">
+
+      <div class="div-inputs">
+        <ion-item>
+          <ion-input placeholder="Email" type="text" [(ngModel)]="email" name="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="password" placeholder="Senha"  [(ngModel)]="senha" name="senha" >
+            <ion-input-password-toggle color="medium" slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+      </div>
+
+
+
+      <ion-button type="submit">Entrar</ion-button>
+    </form>
+
+
+    <ion-button color="light">
+      <span>
+        <ion-icon src="../../assets/icon/google.svg"></ion-icon>
+        Logar com Google
+      </span>
+    </ion-button>
+
+  </div>
+</ion-content>

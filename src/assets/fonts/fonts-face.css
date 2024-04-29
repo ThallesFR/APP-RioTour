@@ -1,0 +1,68 @@
+/*   ----------------     ---   Ubunto   ---  -------------------------     */
+/* Fonte Ubuntu Bold */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* Fonte Ubuntu Bold Italic */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./Ubuntu/Ubuntu-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Fonte Ubuntu Italic */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./Ubuntu/Ubuntu-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+/* Fonte Ubuntu Light */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./Ubuntu/Ubuntu-Light.ttf') format('truetype');
+    font-weight: lighter; 
+}
+
+/* Fonte Ubuntu Light Italic */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./Ubuntu/Ubuntu-LightItalic.ttf') format('truetype');
+    font-weight: lighter; 
+    font-style: italic;
+}
+
+/* Fonte Ubuntu Medium */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./Ubuntu/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500; 
+}
+
+/* Fonte Ubuntu Medium Italic */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./Ubuntu/Ubuntu-MediumItalic.ttf') format('truetype');
+    font-weight: 500; 
+    font-style: italic;
+}
+
+/* Fonte Ubuntu Regular */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+/*   ----------------     ---   Vampiro One   ---  -------------------------     */
+/* Fonte Vampiro One */
+@font-face {
+    font-family: 'Vampiro One';
+    src: url('./Vampiro_One/VampiroOne-Regular.ttf') format('truetype');
+    font-style: normal;
+}

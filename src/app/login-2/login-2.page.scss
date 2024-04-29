@@ -1,0 +1,68 @@
+.login-2 {
+    background-image: url('../../assets/img/cristo.jpg');
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Cor preta com 50% de transparência */
+    background-blend-mode: multiply;
+    /* Modo de mistura para escurecer */
+    height: 100vh !important;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .logo{
+    padding-bottom: 30px;
+  }
+  
+  .logo-text {
+    font-family: 'Vampiro One';
+    font-size: 96px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    margin-top: -35px;
+  }
+  
+  .form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  ion-item{
+    width: 280px;
+    height: 40px;
+    border-radius: 50px;
+  }
+
+  ion-button {
+    width: 200px;
+    height: 55px;
+    margin-bottom: 10px;
+  }
+
+  ion-button span{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ion-icon{
+    height: 30px;
+    width: 30px;
+  }
