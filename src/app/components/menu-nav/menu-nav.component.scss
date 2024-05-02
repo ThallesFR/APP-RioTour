@@ -1,5 +1,9 @@
-ion-tab-bar{
-    --background:  #2A836B;
-    --color: white;
+ion-tab-bar {
+  --background: #2A836B;
+  --color: white;
+  --position: fixed;
+  --bottom: 0;
+  height: 70px;
+
 
 }
