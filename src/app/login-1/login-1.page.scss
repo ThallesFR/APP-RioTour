@@ -1,10 +1,13 @@
-.login-1 {
+ion-content {
   background-image: url('../../assets/img/cristo.jpg');
   background-color: rgba(0, 0, 0, 0.4);
   /* Cor preta com 50% de transparência */
   background-blend-mode: multiply;
   /* Modo de mistura para escurecer */
-  height: 100vh !important;
+}
+
+.login-1 {
+  height: 100%;
   background-size: cover;
   background-position: center center;
   display: flex;

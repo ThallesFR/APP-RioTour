@@ -1,54 +1,55 @@
+ion-content {
+  background-image: url('../../assets/img/cristo.jpg');
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Cor preta com 50% de transparência */
+  background-blend-mode: multiply;
+  /* Modo de mistura para escurecer */
+}
+
 .cadastro {
-    background-image: url('../../assets/img/cristo.jpg');
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Cor preta com 50% de transparência */
-    background-blend-mode: multiply;
-    /* Modo de mistura para escurecer */
-    height: 100vh !important;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .form-cadastro {
-    width: 95vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 15px;
-    padding-bottom: 40px;
-  }
-  
-  h1{
-    font-size: 36px;
-    font-weight: bold;
-    color: white;
-  }
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-  .div-inputs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 30px;
-  }
-  
-  ion-item{
-    width: 280px;
-    height: 40px;
-    border-radius: 50px;
-  }
+.form-cadastro {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  padding-bottom: 40px;
+}
 
-  ion-button {
-    width: 280px;
-    height: 55px;
-    margin-bottom: 10px;
-  }
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+}
 
- 
+.div-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+ion-item {
+  width: 280px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+ion-button {
+  width: 280px;
+  height: 55px;
+  margin-bottom: 10px;
+}

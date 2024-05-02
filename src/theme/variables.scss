@@ -1,5 +1,6 @@
 :root {
-  --ion-font-family: 'Ubuntu', sans-serif;/*font do App*/
+  --ion-font-family: 'Ubuntu', sans-serif;
+  /*font do App*/
   --ion-color-primary: #2A836B;
   --ion-color-primary-rgb: 0, 100, 0;
   --ion-color-primary-contrast: #ffffff;
@@ -17,9 +18,10 @@ ion-button {
   --background-focused: #004D00;
   --background-hover: #006400;
   --border-radius: 5px;
+  text-transform: none;
 }
 
-ion-content{
+ion-content {
   --background: none;
   background-color: #F1F1F1;
 }
