@@ -1,0 +1,58 @@
+ion-header{
+    background-color: none;
+}
+
+ion-toolbar{
+    background-color: none;
+}
+
+.card_genero{
+    height: 380px;
+    padding: 10px;
+    background-color: #d3d2d2;
+}
+
+.card_genero div {
+  display: flex;
+}
+
+h1{
+    color: #2A836B;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.card_genero ion-card {
+  display: flex;
+  margin: 0px;
+  height: 7rem;
+  width: 100%;
+  margin: 5px;
+}
+
+
+.card_genero ion-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom right, #66666600, #000000);
+}
+
+
+ion-card ion-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ion-card-content {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  margin-left: 8px;
+  bottom: 0;
+}
