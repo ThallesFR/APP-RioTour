@@ -1,13 +1,68 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>local</ion-title>
+    <ion-icon class="seta-voltar" name="chevron-back-outline" (click)="goBack()"></ion-icon>
+    <ion-title>
+      Local
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">local</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-img src="../../assets/img/pao-acucar.avif"></ion-img>
+
+  <div class="text-1">
+    <div>
+      <h1>{{ receivedData }} </h1>
+      <a (click)="goToDetailPage('rota-gps',receivedData)"><ion-icon name="location"></ion-icon>Localização</a>
+    </div>
+
+    <ion-icon class="fav_icon" name="bookmark"></ion-icon>
+
+  </div>
+  <ion-card>
+    <div class="titulo_avaliacao container">
+      <h2>Avaliações</h2>
+      <div>
+        <h4>4/5</h4>
+        <ion-icon class="star_true" name="star"></ion-icon>
+        <ion-icon class=" star_true" name="star"></ion-icon>
+        <ion-icon class=" star_true" name="star"></ion-icon>
+        <ion-icon class=" star_true" name="star"></ion-icon>
+        <ion-icon class=" star_false" name="star"></ion-icon>
+      </div>
+    </div>
+    <div class="container container_btn">
+      <ion-button class="btn_avaliar">
+        Avaliar
+      </ion-button>
+    </div>
+    <div class="container comentario">
+      <div class="text_comentatio">
+        <h6>Nome do Perfil</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum eu massa vel blandit.</p>
+      </div>
+      <div class="avaliacao_comentario">
+        <ion-icon class="star_true" name="star"></ion-icon>
+        <h5>5/5</h5>
+      </div>
+    </div>
+    <div class="container comentario">
+      <div class="text_comentatio">
+        <h6>Nome do Perfil</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum eu massa vel blandit.</p>
+      </div>
+      <div class="avaliacao_comentario">
+        <ion-icon class="star_true" name="star"></ion-icon>
+        <h5>5/5</h5>
+      </div>
+    </div>
+    <div class="container container_btn">
+      <a href=""> Ver mais</a>
+
+    </div>
+
+  </ion-card>
+
 </ion-content>
+<app-menu-nav></app-menu-nav>

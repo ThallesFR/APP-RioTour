@@ -1,13 +1,47 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>lista-de-locais</ion-title>
+    <ion-icon class="seta-voltar" name="chevron-back-outline" (click)="redirecionar('tipos-de-locais')"></ion-icon>
+    <ion-title>
+      {{ receivedData }}
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">lista-de-locais</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card class="melhores-passeios">
+    <div class="slide">
+      <div class="descricao-img">
+        <div class="nome-passeio">
+          <h1>Pão de açúcar</h1>
+          <h5><ion-icon name="star"></ion-icon>5/5</h5>
+        </div>
+      </div>
+      <ion-img src="../../assets/img/pao-acucar.avif"></ion-img>
+    </div>
+    <div class="descricao-slide">
+      <p>Lorem ipsum dolor sit amet, elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras
+        venenatis euismod malesuada. Integer convallis mollis ligula, ac aliquet risus dictum ac. Nam at sem varius,
+        vehicula lorem quis, interdum erat.</p>
+    </div>
+    <ion-button (click)="goToDetailPage('/local','Leblon')">Ver mais</ion-button>
+  </ion-card>
+  <ion-card class="melhores-passeios">
+    <div class="slide">
+      <div class="descricao-img">
+        <div class="nome-passeio">
+          <h1>Pão de açúcar</h1>
+          <h5><ion-icon name="star"></ion-icon>5/5</h5>
+        </div>
+      </div>
+      <ion-img src="../../assets/img/pao-acucar.avif"></ion-img>
+    </div>
+    <div class="descricao-slide">
+      <p>Lorem ipsum dolor sit amet, elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras
+        venenatis euismod malesuada. Integer convallis mollis ligula, ac aliquet risus dictum ac. Nam at sem varius,
+        vehicula lorem quis, interdum erat.</p>
+    </div>
+    <ion-button (click)="goToDetailPage('/local','Leblon')">Ver mais</ion-button>
+  </ion-card>
+
 </ion-content>
+<app-menu-nav></app-menu-nav>

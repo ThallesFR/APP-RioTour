@@ -27,9 +27,15 @@ ion-content {
   background-color: #F1F1F1;
 }
 ion-toolbar{
-  --background: #F1F1F1;
+  --background: #ffffff;
 }
 
 ion-toolbar ion-title{
   color: #2A836B;
+}
+
+.seta-voltar{
+  color: #2A836B;
+  font-size: 28px;
+  margin-left: 10px;
 }

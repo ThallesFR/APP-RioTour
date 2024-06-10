@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tipos-de-locais',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tipos-de-locais.page.scss'],
 })
 export class TiposDeLocaisPage implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor() { }
 
   ngOnInit() {
   }
 
+  goToDetailPage(rota: string,local: string) {
+    this.router.navigate([rota], {
+      queryParams: {
+        data: local
+      }
+    });
+  }
 }
